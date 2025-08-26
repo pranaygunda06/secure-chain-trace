@@ -1,73 +1,143 @@
-# Welcome to your Lovable project
+# Secure Chain Trace
 
-## Project info
+A blockchain-powered supply chain transparency platform that enables tamper-proof tracking of products from source to shelf.
 
-**URL**: https://lovable.dev/projects/ce846b9b-fdac-45bf-af07-ff5aca9f847b
+## Overview
 
-## How can I edit this code?
+Secure Chain Trace leverages IBM Cloud and blockchain technology to create immutable records of product journeys through the supply chain. With QR code integration, customers can instantly verify product authenticity and view complete sourcing history.
 
-There are several ways of editing your application.
+## Key Features
 
-**Use Lovable**
+### 🔗 Blockchain Integration
+- **Immutable Records**: All supply chain data stored on blockchain
+- **Smart Contracts**: Automated verification and validation rules
+- **IBM Cloud Platform**: Enterprise-grade blockchain infrastructure
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ce846b9b-fdac-45bf-af07-ff5aca9f847b) and start prompting.
+### 📱 QR Code Tracking
+- **Instant Verification**: Scan QR codes to view product history
+- **Real-time Updates**: Live tracking through supply chain stages
+- **Mobile Optimization**: Responsive design for all devices
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🏭 Multi-Stage Tracking
+- **Producer**: Origin tracking with certifications
+- **Distributor**: Logistics and shipping verification
+- **Retailer**: Store delivery confirmation
+- **Customer**: End-user authenticity verification
 
-**Use your preferred IDE**
+### 🛡️ Trust & Security
+- **Tamper-Proof**: Blockchain ensures data integrity
+- **Transparency**: Complete visibility into product journey
+- **Authenticity**: Verification of genuine products
+- **Ethical Sourcing**: Proof of sustainable practices
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Technology Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend**: React + TypeScript + Tailwind CSS
+- **Blockchain**: IBM Blockchain Platform (ICP)
+- **Smart Contracts**: Chaincode for business logic
+- **Visualization**: React Flow for supply chain diagrams
+- **UI Components**: shadcn/ui component library
 
-Follow these steps:
+## Supply Chain Workflow
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. **Producer** creates product → generates QR code → logs to blockchain
+2. **Distributor** scans → updates shipping details → verifies on blockchain
+3. **Retailer** receives → confirms delivery → updates blockchain record
+4. **Customer** scans QR → views complete verified journey
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Benefits
 
-# Step 3: Install the necessary dependencies.
-npm i
+✅ **Trust & Transparency** - Immutable records build customer confidence  
+✅ **Authenticity Verification** - Eliminate counterfeit products  
+✅ **Real-time Efficiency** - Streamlined operations across supply chain  
+✅ **Ethical Sourcing** - Demonstrate sustainable and ethical practices  
+✅ **Brand Value** - Premium positioning through transparency  
+✅ **Complete Visibility** - End-to-end supply chain tracking  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## Getting Started
+
+### Prerequisites
+- Node.js 18+ and npm
+- Modern web browser with camera access (for QR scanning)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd secure-chain-trace
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Development
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+# Run development server
+npm run dev
 
-**Use GitHub Codespaces**
+# Build for production
+npm run build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Preview production build
+npm run preview
+```
 
-## What technologies are used for this project?
+## Project Structure
 
-This project is built with:
+```
+src/
+├── components/
+│   ├── Hero.tsx              # Landing page hero section
+│   ├── SupplyChainFlow.tsx    # Interactive flow diagram
+│   ├── QRScanner.tsx          # QR code scanning interface
+│   ├── Benefits.tsx           # Benefits showcase
+│   ├── nodes/                 # Custom React Flow nodes
+│   └── ui/                    # Reusable UI components
+├── pages/
+│   ├── Index.tsx              # Main application page
+│   └── NotFound.tsx           # 404 error page
+└── lib/
+    └── utils.ts               # Utility functions
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Demo Features
 
-## How can I deploy this project?
+The current implementation includes:
+- Interactive supply chain visualization
+- Simulated QR code scanning
+- Mock product journey tracking
+- Responsive design across devices
 
-Simply open [Lovable](https://lovable.dev/projects/ce846b9b-fdac-45bf-af07-ff5aca9f847b) and click on Share -> Publish.
+## Future Enhancements
 
-## Can I connect a custom domain to my Lovable project?
+- Real IBM Blockchain Platform integration
+- Live QR code scanning with camera
+- Multi-language support
+- Advanced analytics dashboard
+- Mobile app development
+- API integration for third-party systems
 
-Yes, you can!
+## Contributing
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+For questions or support, please contact the development team.
+
+---
+
+*Building trust through transparency in global supply chains.*
